@@ -1,0 +1,70 @@
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(89, 175, 247);
+    border: 2px solid rgb(89, 175, 247);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 65px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color:rgb(89, 175, 247);
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+.button:hover::before {
+    scale: 3;
+  }
+  
+.button:hover {
+    color: #ffffff;
+    scale: 1.1;
+   
+  }
+  
+.button:active {
+    scale: 1;
+  }
+  
+
+
+  
+.nl {
+    position: relative;
+    display: inline;
+  }
+  
+.nl::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #3cc8ff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+
+.nl:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+  
+
