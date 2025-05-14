@@ -26,7 +26,7 @@ function Headpage() {
                    
                     <div className="carousel-inner">
                         <div className="carousel-item active bg-dark ">
-                            <img src="background.jpg" alt="" className="w-100 opacity-50" height="550px"/>
+                            <img src="background.jpg" alt="" className="w-100 opacity-50" height="550px" style={{objectFit:"cover"}}/>
                             <div className="container">
                                 <div className="carousel-caption text-start mb-5">
                                     <h1>Welcome to AI&DEV <span className="text-info ">Community</span></h1>
